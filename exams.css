@@ -1,0 +1,336 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+    width:100%;
+}
+
+body{
+    height:100%;
+    width:100%;
+}
+
+.row{
+    padding:0;
+    margin:0;
+}
+
+.nav-bar{
+    width:100%;
+    height:6vh;
+    position:relative;
+}
+
+.nav-bar .row{
+    height:6vh;
+    width:100%;
+    position:fixed;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.nav-bar a{
+    height:100%;
+}
+
+.nav-bar img{
+    height:100%;
+}
+
+.nav-bar .row .col-sm-12{
+    padding:0;
+    background-color: #4E86F1;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .left{
+    display:flex;
+}
+
+.nav-square{
+    height:100%;
+    max-width:6vh;
+    background-color: #6C99EE;
+    margin-right:10px;
+}
+
+.nav-log-off{
+    height:100%;
+    width:6vh;
+    left:0;
+}
+
+.main-content{
+    height:94vh;
+}
+
+.main-content .mainrow{
+    height:100%;
+}
+
+.main-content .row .col-sm-2{
+    color:#4E86F1;
+    height:auto;
+    padding:0 10px 10px 10px;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.main-content .row .col-sm-2 .sticky-wrapper{
+    padding-top:10px;
+    position:sticky;
+    top:6vh;
+}
+
+.main-content .row .col-sm-2 h6 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main-content .row .col-sm-2 .side-nav-btn {
+    font-family: 'Arial', sans-serif;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.main-content .row .col-sm-2 .side-nav-btn img {
+    width: 25px;
+    height: 22px;
+    margin-left: 1px;
+    margin-bottom: 3px;
+}
+
+.main-content .row .col-sm-2 .side-nav-btn2 {
+    font-family: 'Arial', sans-serif;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.main-content .row .col-sm-2 .side-nav-btn2 img {
+    width: 25px;
+    height: 22px;
+    margin-left: 1px;
+    margin-bottom: 3px;
+}
+
+.main-content .row .col-sm-10 {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title{
+    width:90%;
+    border-bottom:1px solid #4E86F1;
+    margin-top:50px;
+    padding-bottom:10px;
+}
+
+.page-title h1{
+    color:#4E86F1;
+    font-weight:900;
+}
+
+.side-nav-btn{
+    border:1px solid;
+    padding:12px;
+    background-color:#4E86F1;
+    color:white;
+    font-weight:500;
+    border-radius:5px;
+}
+
+.side-nav-btn:hover{
+    background-color:#71A2FF;
+}
+
+.dashboard {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 100%;
+    height: auto; 
+    background-color: transparent; 
+    flex-direction: column;
+}
+
+.dashboard .row {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.dashboard .col-sm-12 {
+    background-color: white; 
+    border-radius: 5px;
+    box-shadow: none; 
+    display: flex;
+    justify-content: flex-start;    
+    align-items: flex-start;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-left: 100vh;
+}
+
+.back-btn {
+    padding: 12px;
+    background-color: transparent;
+    color: #0073e6;
+    cursor: pointer;
+    border: 1px solid #0073e6;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.text-container{
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure text container takes full width */
+    padding-left: 10px;
+}
+
+
+.back-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #0073e6;
+    border-radius: 5px;
+    pointer-events: none;
+    box-shadow: 0 0 0 2px transparent;
+    transition: box-shadow 0.3s;
+}
+
+.back-btn:hover::before {
+    box-shadow: 0 0 0 2px #0073e6;
+}
+
+.back-btn:hover {
+    background-color: rgba(0, 115, 230, 0.1);
+}
+
+.examname-text {
+    position: absolute;
+    top: 1.5vh; 
+    left: 2vh;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #4E86F1;
+}
+
+.description-text {
+    position: absolute; 
+    top: 6vh; 
+    left: 2vh;
+    font-size: 16px; 
+    color: #4E86F1;
+    font-weight: bolder; /* Consistent font weight */
+}
+
+.response-text {
+    position: absolute; 
+    top: 15vh; /* Adjust this to prevent overlap */
+    bottom: 5px;
+    left: 2vh;
+    font-size: 16px; 
+    color: black;
+    font-weight: normal; /* Consistent font weight */
+}
+
+.view-text {
+    position: absolute; 
+    top: 20vh; /* Adjust this to prevent overlap */
+    bottom: 50px;
+    left: 2vh;
+    font-size: 16px; 
+    color: #4E86F1;
+    font-weight: normal; /* Consistent font weight */
+}
+
+.box-container {
+    display: flex; /* Align items in a row */
+    justify-content: flex-end; /* Space out items to take up full width */
+    align-items: center; /* Center items vertically if needed */
+    padding: 20px; /* Optional: padding around the container */
+}
+.small-box {
+    background: yellow;
+    width: 280px;
+    height: 70px; /* Adjust height to accommodate content */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 5%;
+}
+
+.small-box.green {
+    background: green;
+    color: white; /* Ensure text is visible against the green background */
+       margin-right: 100px;
+       margin-left: 180px;
+}
+
+.small-box.exam-status {
+    color: green;
+    margin-right: 500px;
+    background: green;
+}
+.small-box:not(:last-child) {
+    margin-right: 8px; /* Adjust the space between boxes if needed */
+    margin-left: 150px;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure text container takes full width */
+    padding-left: 10px;
+}
+
+.icon{
+     max-width: 40%; 
+     max-height: 50%;
+     margin-right: 10px;
+}
+
+.score-text,
+.scoretext-text,
+.exam-status-text,
+.percentage-text {
+    margin: 0; /* Remove default margin */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold; /* Adjust font weight as needed */
+    font-size: 14px; /* Adjust font size as needed */
+}

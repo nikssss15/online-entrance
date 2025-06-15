@@ -1,0 +1,168 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    width:100vw;
+}
+
+.header{
+    height:15vh;
+}
+
+.form .row{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+.form .row .col-sm-6{
+    height:70vh;
+    border-radius:5px;
+    padding:0;
+    box-shadow: 6px 6px 2px -1px rgba(0, 0, 0, 0.2);
+}
+
+
+.containerss{
+    display:flex;
+    height:100%;
+}
+
+.left-side{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding:30px;
+    width:50%;
+    height: 70vh;
+    background-color: #F6F6F6;
+    overflow-y: scroll;
+}
+
+
+.right-side{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:50%;
+    height: 70vh;
+    background-color: #356BD2;
+    padding:10px;
+}
+
+.right-side img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+#form_label{
+    color:#4E86F1;
+    font-weight: 700;
+}
+
+input, select{
+    padding-inline-start: 10px;
+    height:60px;
+    width:60px;
+    border-radius:5px;
+    border:1px solid #B1B1B1;
+}
+
+#lmnamestack{
+    display: flex;
+}
+
+#stack1{
+    width: 50%;
+    padding-right: 2.5%;
+}
+
+#stack2{
+    width: 50%;
+    padding-left: 2.5%;
+}
+
+#stack1 input{
+    width: 100%;
+}
+
+#stack2 input{
+    width: 100%;
+}
+
+#submit-button{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+}
+
+#submit-button p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+button{
+    width:80%;
+    height:50px;
+    background-color: #4E86F1;
+    color:white;
+    font-weight:600;
+    border:none;
+    border-radius:5px;
+}
+
+form label{
+    text-align: center;
+}
+
+.otp-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.otp-container img{
+    height:50%;
+    width:50%;
+    align-self: center;
+}
+
+.otp{
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+}
+
+.otp input{
+    font-size:large;
+    padding:auto;
+    text-align: center;
+    padding:0;
+}
+
+.otp 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.signup{
+    height:90%;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+}
+
+.otpsend button{
+    padding:0px 2px 0px 2px;
+    max-width:fit-content; 
+    max-height:20px;
+    background-color: transparent;
+    color:#356BD2;
+}
